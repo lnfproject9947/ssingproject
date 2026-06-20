@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "굴림", sans-serif;
+  background: #e8e1f5;            /* 연보라 배경 */
+  color: #000000;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #f5f2fa;            /* 흰색보다 살짝 어두운 오프화이트 창 */
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 40px;
+}
+
+.desc {
+  margin: 0 0 24px;
+  color: #6b6b73;                /* 창이 밝아져서 글자색도 어둡게 */
+  font-size: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #d6dbe5;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f7cff;
+}
+
+.btn {
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-radius: 8px;
+  background: #4f7cff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3e68dd;
+}
+
+.link-text {
+  margin: 20px 0 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+a {
+  color: #4f7cff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.admin-page {
+  min-height: 100vh;
+  padding: 40px 24px;
+}
+
+.admin-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.small-link {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #eef2ff;
+  font-size: 14px;
+}
+
+.member-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.member-table th,
+.member-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e8ef;
+  text-align: center;
+  font-size: 14px;
+}
+
+.member-table th {
+  background: #f7f8fb;
+  font-weight: bold;
+}
+
+.table-btn {
+  border: none;
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.table-btn.edit {
+  background: #eaf1ff;
+  color: #2d5bd1;
+}
+
+.table-btn.delete {
+  background: #ffecec;
+  color: #d12d2d;
+}
+
+@media (max-width: 700px) {
+  .admin-header {
+    flex-direction: column;
+  }
+
+  .member-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
